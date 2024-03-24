@@ -48,6 +48,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(276, 22);
             this.txtMatKhau.TabIndex = 0;
+            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // label1
             // 

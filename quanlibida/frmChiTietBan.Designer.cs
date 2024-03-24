@@ -35,10 +35,12 @@
             this.btnTinhTien = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.btnBaoHanh = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnDichVu = new System.Windows.Forms.Button();
             this.lvHoaDon = new System.Windows.Forms.ListView();
+            this.lbHienTai = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lb2Nam = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,22 +103,13 @@
             // 
             // btnBaoHanh
             // 
-            this.btnBaoHanh.Location = new System.Drawing.Point(56, 509);
+            this.btnBaoHanh.Location = new System.Drawing.Point(58, 505);
             this.btnBaoHanh.Name = "btnBaoHanh";
             this.btnBaoHanh.Size = new System.Drawing.Size(172, 62);
             this.btnBaoHanh.TabIndex = 7;
             this.btnBaoHanh.Text = "Bao hanh";
             this.btnBaoHanh.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(307, 450);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 29);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "8/2022 - 8/2024";
+            this.btnBaoHanh.Click += new System.EventHandler(this.btnBaoHanh_Click);
             // 
             // label4
             // 
@@ -137,6 +130,7 @@
             this.btnDichVu.TabIndex = 8;
             this.btnDichVu.Text = "Dich vu";
             this.btnDichVu.UseVisualStyleBackColor = true;
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
             // 
             // lvHoaDon
             // 
@@ -150,15 +144,47 @@
             this.lvHoaDon.Visible = false;
             this.lvHoaDon.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedndexChanged);
             // 
+            // lbHienTai
+            // 
+            this.lbHienTai.AutoSize = true;
+            this.lbHienTai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHienTai.Location = new System.Drawing.Point(317, 453);
+            this.lbHienTai.Name = "lbHienTai";
+            this.lbHienTai.Size = new System.Drawing.Size(101, 25);
+            this.lbHienTai.TabIndex = 10;
+            this.lbHienTai.Text = "28/8/2022";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(446, 453);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(19, 25);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "-";
+            // 
+            // lb2Nam
+            // 
+            this.lb2Nam.AutoSize = true;
+            this.lb2Nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb2Nam.Location = new System.Drawing.Point(491, 454);
+            this.lb2Nam.Name = "lb2Nam";
+            this.lb2Nam.Size = new System.Drawing.Size(101, 25);
+            this.lb2Nam.TabIndex = 12;
+            this.lb2Nam.Text = "28/8/2024";
+            // 
             // frmChiTietBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 706);
+            this.Controls.Add(this.lb2Nam);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbHienTai);
             this.Controls.Add(this.lvHoaDon);
             this.Controls.Add(this.btnDichVu);
             this.Controls.Add(this.btnBaoHanh);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnTinhTien);
             this.Controls.Add(this.btnStart);
@@ -183,9 +209,11 @@
         private System.Windows.Forms.Button btnTinhTien;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Button btnBaoHanh;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnDichVu;
         private System.Windows.Forms.ListView lvHoaDon;
+        private System.Windows.Forms.Label lb2Nam;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbHienTai;
     }
 }

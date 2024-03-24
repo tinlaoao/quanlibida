@@ -24,9 +24,9 @@ namespace quanlibida
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            //if (txtEmail.Text.Length < 0 || txtEmail.Text != "admin") { MessageBox.Show("Nhap sai tai khoan", "thong bao"); return; }
-            //if (txtMatKhau.Text.Length < 0 || txtMatKhau.Text != "admin") { MessageBox.Show("Nhap sai tai khoan", "thong bao"); return; }
-            //MessageBox.Show("Chuc mung ban da dang nhap thanh cong", "thong bao");
+            if (txtEmail.Text.Length < 0 || txtEmail.Text != "admin@gmail.com") { MessageBox.Show("Nhap sai tai khoan", "thong bao"); return; }
+            if (txtMatKhau.Text.Length < 0 || txtMatKhau.Text != "admin") { MessageBox.Show("Nhap sai tai khoan", "thong bao"); return; }
+            MessageBox.Show("Chuc mung ban da dang nhap thanh cong", "thong bao");
             MainForm form1 = new MainForm();
             
             form1.Show();

@@ -53,6 +53,7 @@ namespace quanlibida
         {
              ((DichVu)lbDichVu.SelectedItem).ten = tbTenDV.Text;
             ((DichVu)lbDichVu.SelectedItem).gia = Int32.Parse(tbGia.Text);
+            
         }
     }
 }

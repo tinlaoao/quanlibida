@@ -55,6 +55,10 @@ namespace quanlibida
                 tongTien = (phutDoiGia - phutBatDau) * tienKhungGio1 + (phutKetThuc - phutDoiGia) * tienKhungGio2;
             }
             this.batDau = DateTime.MinValue;
+            foreach(DichVu dv in dichVu)
+            {
+                tongTien += dv.gia;
+            }
             return tongTien;
         }
         internal string getLoai()
