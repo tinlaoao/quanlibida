@@ -148,7 +148,7 @@ namespace quanlibida
             DateTime gio2NamSau = DateTime.Now.AddYears(2);
             lbHienTai.Text = gioHienTai.ToString("dd/MM/yyyy");
             lb2Nam.Text = gio2NamSau.ToString("dd/MM/yyyy");
-            doanhThus.Add(new DoanhThu(200000,"Bao hanh",gioHienTai));
+            doanhThus.Add(new DoanhThu(-200000,"Bao hanh",gioHienTai));
             btnBaoHanh.Enabled=false;
         }
     }

@@ -29,11 +29,11 @@ namespace quanlibida
         BanBida ban4 = new BanBida("ban 4", "lo", new ArrayList());
         BanBida ban5 = new BanBida("ban 5", "lo", new ArrayList());
         BanBida ban6 = new BanBida("ban 6", "lo", new ArrayList());
-        NhanVien nv1 = new NhanVien("aaa", "26/6/2004", "giam doc", "gd@gm.com", "999999", "hcm", "10000");
-        NhanVien nv2 = new NhanVien("bbb", "26/6/2002", "an hai", "gd@gm.com", "988889", "hcm", "789");
-        NhanVien nv3 = new NhanVien("ccc", "26/6/2001", "bao", "gd@gm.com", "777", "hcm", "999");
-        NhanVien nv4 = new NhanVien("ddd", "26/6/2006", "bao ve", "gd@gm.com", "55555", "hcm", "9999");
-        NhanVien nv5 = new NhanVien("ddd", "26/6/2006", "ao ve", "d@gm.com", "55555", "hcm", "9999");
+        NhanVien nv1 = new NhanVien("Nguyễn Văn A", "26/6/2004", "Pha chế", "nva@gmail.com", "01234567899", "hcm", "22000");
+        NhanVien nv2 = new NhanVien("Nguyễn Văn B", "26/6/2002", "Phục vụ", "nvb@gmail.com", "01234567890", "hcm", "21000");
+        NhanVien nv3 = new NhanVien("Nguyễn Văn C", "26/6/2001", "Phục vụ", "nvc@gmail.com", "01234567896", "hcm", "21500");
+        NhanVien nv4 = new NhanVien("Nguyễn Văn D", "26/6/2006", "Bảo vệ", "nvd@gmail.com", "01234567897", "hcm", "20000");
+        NhanVien nv5 = new NhanVien("Nguyễn Văn E", "26/6/2006", "Thu ngân ", "nve@gmail.com", "01234567898", "hcm", "23000");
         public MainForm()
         {
             InitializeComponent();
